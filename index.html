@@ -1,0 +1,2195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exclusive Rummy</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/root.css " />
+    <link rel="stylesheet" href="./assets/js/style.js" />
+    <link rel="icon" href="./assets/Images/webp/Favicon.webp" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <meta name="title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta
+      name="description"
+      content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta
+      property="og:title"
+      content="Meta Tags — Preview, Edit and Generate"
+    />
+    <meta
+      property="og:description"
+      content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/images/meta-tags.webp"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta
+      property="twitter:title"
+      content="Meta Tags — Preview, Edit and Generate"
+    />
+    <meta
+      property="twitter:description"
+      content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/images/meta-tags.webp"
+    />
+  </head>
+
+  <body class="overflow-hidden">
+    <!-- preloader -->
+    <div id="preloader" class="overflow-hidden">
+      <div
+        id="preloader_bg"
+        class="d-flex align-items-center justify-content-center z-1000"
+      >
+        <img
+          class="preloader_img"
+          src="./assets/Images/webp/Logo.webp"
+          alt="Yoomi_logo"
+        />
+      </div>
+    </div>
+    <section class="overflow-hidden">
+      <!-- nav -->
+      <header class="header_bg min-vh-100 position-relative">
+        <div class="header_gradient position-absolute"></div>
+        <nav class="nav_bg mb-5 position-relative z-1">
+          <div class="my_container">
+            <div class="py-4 d-flex justify-content-between align-items-center">
+              <a href="#"
+                ><img src="./assets/Images/webp/Logo.webp" alt="header_logo"
+              /></a>
+              <ul
+                class="mb-0 ps-0 d-lg-flex gap-4 text-white d-none d-lg-block d-none"
+              >
+                <li>
+                  <a
+                    href="#home"
+                    class="text_white ff-Inter fw-medium opacity-75 fs-16px"
+                    >Hogar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#Mission"
+                    class="text_white ff-Inter fw-medium opacity-75 fs-16px"
+                    >Misión</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#slot"
+                    class="text_white ff-Inter fw-medium opacity-75 fs-16px"
+                    >Tragamonedas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#choose_us"
+                    class="ff-Inter text_white fw-medium opacity-75 fs-16px"
+                    >Por qué elegirnos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#offer"
+                    class="ff-Inter text_white fw-medium opacity-75 fs-16px"
+                    >Ofertas</a
+                  >
+                </li>
+              </ul>
+              <div class="position-relative d-lg-block d-none">
+                <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                  Acceso
+                </button>
+                <span class="position-absolute bottom">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="106"
+                    height="28"
+                    viewBox="0 0 106 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <button
+                id="openNav"
+                onclick="openNav()"
+                class="closenavbar d-lg-none"
+                type="button"
+              >
+                <img
+                  src="./assets/Images/webp/hamburger.webp"
+                  alt="hamburger"
+                />
+              </button>
+              <div
+                id="Menu"
+                class="d-lg-none opennavbar d-flex justify-content-center align-items-center text-center"
+              >
+                <button
+                  class="closenavbar position-absolute closebtn"
+                  onclick="closeNav()"
+                  type="button"
+                >
+                  &times;
+                </button>
+                <ul class="mb-0 ps-0 d-flex flex-column gap-4 text-white">
+                  <li onclick="closeNav()">
+                    <a
+                      href="#home"
+                      class="ff-Inter text_white fw-medium fs-16px opacity-75"
+                      >Hogar</a
+                    >
+                  </li>
+                  <li onclick="closeNav()">
+                    <a
+                      href="#Mission"
+                      class="ff-Inter text_white fw-medium fs-16px opacity-75"
+                      >Misión</a
+                    >
+                  </li>
+                  <li onclick="closeNav()">
+                    <a
+                      href="#slot"
+                      class="ff-Inter text_white fw-medium fs-16px opacity-75"
+                      >Tragamonedas</a
+                    >
+                  </li>
+                  <li onclick="closeNav()">
+                    <a
+                      href="#choose_us"
+                      class="ff-Inter text_white fw-medium fs-16px opacity-75"
+                      >Por qué elegirnos</a
+                    >
+                  </li>
+                  <li onclick="closeNav()">
+                    <a
+                      href="#offer"
+                      class="ff-Inter text_white fw-medium fs-16px opacity-75"
+                      >Ofertas</a
+                    >
+                  </li>
+                  <li class="position-relative">
+                    <button
+                      class="Acceso_btn d-block d-lg-none ff-Inter fw-bold fs-16px"
+                    >
+                      Acceso
+                    </button>
+                    <span class="position-absolute bottom">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="106"
+                        height="28"
+                        viewBox="0 0 106 28"
+                        fill="none"
+                      >
+                        <path
+                          d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <section class="mt-5" id="home">
+          <div
+            class="flex-column d-flex align-items-center justify-content-center pt_5"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-easing="linear"
+          >
+            <h1
+              class="text-white text-center ff-Anton fs-72px max-w-505px pt-5 px-2 line-height-120 mb-0"
+            >
+              Exclusive Games. <span class="block">Pasión por ganar</span>
+            </h1>
+            <p
+              class="text-white max-w-505px ff-Inter opacity-75 text-center max-w-727px line-height-160 px-3 mb-0 pt-3"
+            >
+              En Exclusive Games somos un equipo apasionado de personas
+              dedicados al desarrollo de multiplataformas para juegos de azar. A
+              lo largo de nuestra vida consumimos todo tipo de juegos hasta que
+              un día decidimos crear los propios.
+            </p>
+            <div class="position-relative mt-4 pt-2">
+              <button class="btn_2 ff-Inter fw-bold fs-16px">Empezar</button>
+              <span class="position-absolute bottom">
+                <img
+                  src="./assets/Images/webp/gradient_border.webp"
+                  alt="gradient_border"
+                />
+              </span>
+            </div>
+          </div>
+        </section>
+      </header>
+      <!-- 2nd_Section -->
+      <div class="mt_-1" id="Mission">
+        <div class="bg_color mb_-1px">
+          <div class="py-5 pt-5 position-relative">
+            <img
+              class="gradient_1 d-lg-block d-none"
+              src="./assets/Images/webp/Ellipse_31.webp"
+              alt="Ellipse_31"
+            />
+            <img
+              class="gradient_2 d-lg-block d-none"
+              src="./assets/Images/webp/Ellipse_30.webp"
+              alt="Ellipse_30"
+            />
+            <div class="my_container position-relative z-1">
+              <div class="row py-4 position-relative">
+                <img
+                  class="ellipse_12 top-0 max-w-700px"
+                  src="./assets/Images/webp/Ellipse_12.webp"
+                  alt="Ellipse_12"
+                />
+                <div
+                  class="col-md-6 d-flex justify-content-center mt_-15px flex-column"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                  data-aos-easing="linear"
+                >
+                  <span class="mx-auto"
+                    ><img
+                      class="w-100 max-w-538px pe-md-4 cursor-pointer"
+                      src="./assets/Images/webp/pokar_img.webp"
+                      alt="pokar_img"
+                  /></span>
+                  <div class="mb-0">
+                    <h1
+                      class="ff-Anton fs-48px line-height-120 fw-normal mt-5 pt-2 mb-0 text-white"
+                    >
+                      Nuestra Visión
+                    </h1>
+                    <p
+                      class="text-white pt-3 ff-Inter fw-medium line-height-160 opacity-75 max-w-444px fs-16px"
+                    >
+                      Nuestra visión es ser líderes indiscutibles en la
+                      industria de los juegos de azar y llevar nuestra pasión
+                      por el entretenimiento más allá de las fronteras. Imagina
+                      un mundo donde la emoción y la diversión no tengan
+                      límites, y ese es el mundo que queremos crear contigo.
+                    </p>
+                    <a
+                      href="#"
+                      class="fw-bold fs-16px ff-inter line-height-160 text-green"
+                      >Aprende más --></a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 ps-md-4 pt-5 pt-md-0 d-flex justify-content-center flex-md-column flex-column-reverse"
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                  data-aos-easing="linear"
+                >
+                  <div class="mb-0 pt-4 pt-md-0">
+                    <h1
+                      class="ff-Anton fs-48px line-height-120 fw-normal mb-0 text-white"
+                    >
+                      Nuestra Visión
+                    </h1>
+                    <p
+                      class="text-white pt-3 ff-Inter fw-medium line-height-160 opacity-75 max-w-444px fs-16px"
+                    >
+                      Nuestra visión es ser líderes indiscutibles en la
+                      industria de los juegos de azar y llevar nuestra pasión
+                      por el entretenimiento más allá de las fronteras. Imagina
+                      un mundo donde la emoción y la diversión no tengan
+                      límites, y ese es el mundo que queremos crear contigo.
+                    </p>
+                    <a
+                      href="#"
+                      class="fw-bold fs-16px ff-inter line-height-160 text-green"
+                      >Aprende más --></a
+                    >
+                  </div>
+                  <span class="mx-auto"
+                    ><img
+                      class="mt-5 pt-2 w-100 max-w-538px cursor-pointer"
+                      src="./assets/Images/webp/Aviator.webp"
+                      alt="pokar_img"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd_section -->
+      <div class="mt_-1">
+        <div class="white_bg_img bg_color_1 pt-10">
+          <div class="my_container">
+            <div class="d-flex align-items-center justify-content-center">
+              <h1
+                class="ff-Anton fs-48px fw-normal line-height-120 mb-5 mt-sm-5 mt-sm-0 text-center text_black"
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                Nuestros Atributos de Marca
+              </h1>
+            </div>
+            <div
+              class="row justify-content-between position-relative pt-2 pb-5 mb-sm-5"
+            >
+              <img
+                class="w-273px arrow_1 d-sm-block d-none"
+                src="./assets/Images/webp/arrow_img.webp"
+                alt="arrow_img"
+              />
+              <img
+                class="w-273px arrow_2 d-sm-block d-none"
+                src="./assets/Images/webp/arrow_2.webp"
+                alt="arrow_img"
+              />
+              <div
+                class="col-md-3 text-center d-flex align-items-center flex-column"
+                data-aos="flip-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <img src="./assets/Images/webp/blub_img.webp" alt="blub_img" />
+                <h1
+                  class="mb-0 fw-normal fs-20px ff-Anton line-height-120 pt-3 text_black"
+                >
+                  Inteligencia
+                </h1>
+                <p
+                  class="ff-Inter mt-2 line-height-160 text_black fw-medium opacity-75 max-263px"
+                >
+                  Comprendemos a la perfección los gustos de las personas y el
+                  mundo del gaming.
+                </p>
+              </div>
+              <div
+                class="col-md-3 text-center d-flex align-items-center flex-column"
+                data-aos="flip-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <img src="./assets/Images/webp/man_img.webp" alt="blub_img" />
+                <h1
+                  class="mb-0 fw-normal fs-20px ff-Anton line-height-120 pt-3 text_black"
+                >
+                  Proactividad
+                </h1>
+                <p
+                  class="ff-Inter mt-2 line-height-160 text_black fw-medium opacity-75 max-263px"
+                >
+                  Somos creadores de cambios que exploran nuevas formas de
+                  entretenimiento.
+                </p>
+              </div>
+              <div
+                class="col-md-3 text-center d-flex align-items-center flex-column"
+                data-aos="flip-right"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <img src="./assets/Images/webp/blub_img.webp" alt="blub_img" />
+                <h1
+                  class="mb-0 fw-normal fs-20px ff-Anton line-height-120 pt-3 text_black"
+                >
+                  Innovación
+                </h1>
+                <p
+                  class="ff-Inter mt-2 line-height-160 text_black fw-medium opacity-75 max-263px"
+                >
+                  Pensamos fuera de la caja para estar siempre un paso adelante.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="pt-5"
+              id="slot"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              data-aos-easing="linear"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center"
+              >
+                <h1
+                  class="ff-Anton fs-48px fw-normal line-height-120 text_black mb-0 pt-2"
+                >
+                  Slots
+                </h1>
+                <p
+                  class="ff-Inter fs-16px fw-medium line-height-160 opacity-75 max-w-904px text-center text_black pb-5 mb-3 mb-0 pt-4"
+                >
+                  En Exclusive Games, ofrecemos una selección de más de 600
+                  juegos de los principales desarrolladores, como Aristocrat,
+                  Amatic, EGT, Novomatic, IGT, Playtech, Igrosoft y Tom Horn.
+                  Nuestro equipo trabaja incansablemente para innovar y ampliar
+                  nuestra oferta de experiencias, garantizando la máxima
+                  seguridad con operaciones protegidas por cifrado SSL de 256
+                  bits.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col-lg-4 col-sm-6"
+                data-aos="flip-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <div class="max-w-364px mx-auto">
+                  <div
+                    class="img_border overlay overflow-hidden position-relative"
+                  >
+                    <div
+                      class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                    >
+                      <div class="position-relative">
+                        <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                          Jugar
+                        </button>
+                        <span class="position-absolute bottom">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="106"
+                            height="28"
+                            viewBox="0 0 106 28"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <img
+                      class="w-100 img"
+                      src="./assets/Images/webp/slot_img_1.webp"
+                      alt="slot_img_1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-sm-6 pt-4 pt-sm-0"
+                data-aos="flip-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <div class="max-w-364px mx-auto">
+                  <div
+                    class="img_border overflow-hidden overlay position-relative"
+                  >
+                    <div
+                      class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                    >
+                      <div class="position-relative">
+                        <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                          Jugar
+                        </button>
+                        <span class="position-absolute bottom">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="106"
+                            height="28"
+                            viewBox="0 0 106 28"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <img
+                      class="w-100"
+                      src="./assets/Images/webp/slot_img_2.webp"
+                      alt="slot_img_2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-sm-6 pt-4 pt-lg-0"
+                data-aos="flip-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <div class="max-w-364px mx-auto">
+                  <div
+                    class="img_border position-relative overflow-hidden overlay"
+                  >
+                    <div
+                      class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                    >
+                      <div class="position-relative">
+                        <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                          Jugar
+                        </button>
+                        <span class="position-absolute bottom">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="106"
+                            height="28"
+                            viewBox="0 0 106 28"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <img
+                      class="w-100"
+                      src="./assets/Images/webp/slot_img_3.webp"
+                      alt="slot_img_3"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-sm-6 pt-4 position-relative z-1"
+                data-aos="flip-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <div class="max-w-364px mx-auto">
+                  <div
+                    class="img_border position-relative overlay overflow-hidden"
+                  >
+                    <div
+                      class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                    >
+                      <div class="position-relative">
+                        <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                          Jugar
+                        </button>
+                        <span class="position-absolute bottom">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="106"
+                            height="28"
+                            viewBox="0 0 106 28"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <img
+                      class="w-100"
+                      src="./assets/Images/webp/slot_img_4.webp"
+                      alt="slot_img_4"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-sm-6 pt-4"
+                data-aos="flip-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <div class="max-w-364px mx-auto">
+                  <div
+                    class="img_border position-relative overflow-hidden overlay"
+                  >
+                    <div
+                      class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                    >
+                      <div class="position-relative">
+                        <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                          Jugar
+                        </button>
+                        <span class="position-absolute bottom">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="106"
+                            height="28"
+                            viewBox="0 0 106 28"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <img
+                      class="w-100"
+                      src="./assets/Images/webp/slot_img_5.webp"
+                      alt="slot_img_5"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-sm-6 pt-4"
+                data-aos="flip-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <div class="max-w-364px mx-auto">
+                  <div
+                    class="img_border position-relative overlay overflow-hidden"
+                  >
+                    <div
+                      class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                    >
+                      <div class="position-relative">
+                        <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                          Jugar
+                        </button>
+                        <span class="position-absolute bottom">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="106"
+                            height="28"
+                            viewBox="0 0 106 28"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <img
+                      class="w-100"
+                      src="./assets/Images/webp/slot_img_6.webp"
+                      alt="slot_img_6"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex align-items-center justify-content-center pt-4 mt-3 pb-sm-5"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              data-aos-easing="linear"
+            >
+              <div class="position-relative pt-2">
+                <button class="btn_2 ff-Inter fw-bold fs-16px">
+                  Mostrar más
+                </button>
+                <span class="position-absolute bottom">
+                  <img
+                    src="./assets/Images/webp/gradient_border.webp"
+                    alt="gradient_border"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section_4 -->
+      <div class="mt_-1 position-relative">
+        <img
+          class="position-absolute ellipse_28"
+          src="./assets/Images/webp/Ellipse_28.webp"
+          alt="Ellipse_28"
+        />
+        <img
+          class="position-absolute ellipse_29"
+          src="./assets/Images/webp/Ellipse_29.webp"
+          alt="Ellipse_28"
+        />
+        <div class="bg_color jackpot_bg">
+          <div class="py-xl-5 py-5 py-sm-0">
+            <div class="my_container py-xl-5">
+              <div
+                class="row align-items-center justify-content-center position-relative z-1 pb-5"
+              >
+                <div
+                  class="col-lg-6 col-md-10"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                  data-aos-easing="linear"
+                >
+                  <img
+                    class="w-100 pe-lg-3"
+                    src="./assets/Images/webp/Jackpot_img.webp"
+                    alt="Jackpot_img"
+                  />
+                </div>
+                <div
+                  class="col-lg-6 mt-5 mt-lg-0"
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                  data-aos-easing="linear"
+                >
+                  <h1
+                    class="text-white ff-Anton fs-48px fw-normal line-height-120 mb-0"
+                  >
+                    Potenciando sus elecciones
+                  </h1>
+                  <p
+                    class="opacity-75 mb-0 ff-Inter fs-16px fw-medium line-height-160 text-white py-3"
+                  >
+                    Con Exclusive Game lo mejor está de tu lado.
+                  </p>
+                  <div class="d-flex mx-auto gap-2 pt-2">
+                    <img
+                      class="check_all"
+                      src="./assets/Images/webp/check-all.webp"
+                      alt="check-all"
+                    />
+                    <p
+                      class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 max-w-385px"
+                    >
+                      Tecnología HTML5
+                    </p>
+                  </div>
+                  <div class="d-flex mx-auto gap-2 pt-2">
+                    <img
+                      class="check_all"
+                      src="./assets/Images/webp/check-all.webp"
+                      alt="check-all"
+                    />
+                    <p
+                      class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 max-w-385px"
+                    >
+                      Versión PC y móvil
+                    </p>
+                  </div>
+                  <div class="d-flex mx-auto gap-2 pt-2">
+                    <img
+                      class="check_all"
+                      src="./assets/Images/webp/check-all.webp"
+                      alt="check-all"
+                    />
+                    <p
+                      class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 max-w-385px"
+                    >
+                      Control de RTP (controlás qué porcentaje pagar)
+                    </p>
+                  </div>
+                  <div class="d-flex mx-auto gap-2 pt-2">
+                    <img
+                      class="check_all"
+                      src="./assets/Images/webp/check-all.webp"
+                      alt="check-all"
+                    />
+                    <p
+                      class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 max-w-385px"
+                    >
+                      Bonos editables, happy hours, Jackpots, códigos
+                      promocionales.
+                    </p>
+                  </div>
+                  <div class="d-flex mx-auto gap-2 pt-2">
+                    <img
+                      class="check_all"
+                      src="./assets/Images/webp/check-all.webp"
+                      alt="check-all"
+                    />
+                    <p
+                      class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 max-w-385px"
+                    >
+                      Aplicación para android y windows de regalo.
+                    </p>
+                  </div>
+                  <p
+                    class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 pe-2 pt-4"
+                  >
+                    Te reintegramos todo lo invertido en fichas en la moneda que
+                    elijas.
+                  </p>
+                </div>
+              </div>
+
+              <div class="pt-lg-5 overflow-hidden">
+                <div
+                  class="box_1 box_1_bg mt-5 position-relative overflow-hidden mb-3"
+                  data-aos="flip-down"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                  data-aos-easing="linear"
+                >
+                  <p
+                    class="ff-Anton fs-48px fw-normal line-height-120 text-center text-white mb-0 px-2 z-1 position-relative"
+                  >
+                    lanza tu propia plataforma
+                    <span class="d-block">en sólo 2 semanas</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="py-md-5 mb-xl-5 position-relative z-1">
+                <h1
+                  class="text-white ff-Anton fs-48px fw-normal mb-0 py-5 mt-5 text-center"
+                >
+                  Juegos en vivo
+                </h1>
+                <div class="row pt-2">
+                  <div
+                    class="col-lg-4 col-sm-6"
+                    data-aos="flip-left"
+                    data-aos-duration="800"
+                    data-aos-delay="300"
+                    data-aos-easing="linear"
+                  >
+                    <div class="overlay overflow-hidden position-relative">
+                      <div
+                        class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                      >
+                        <div class="position-relative">
+                          <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                            Reproducir ahora
+                          </button>
+                          <span class="position-absolute bottom">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="106"
+                              height="28"
+                              viewBox="0 0 106 28"
+                              fill="none"
+                            >
+                              <path
+                                d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                                stroke="white"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <img
+                        class="w-100 cursor-pointer"
+                        src="./assets/Images/webp/Ezugi.webp"
+                        alt="Ezugi"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-4 col-sm-6 pt-4 pt-sm-0"
+                    data-aos="flip-left"
+                    data-aos-duration="800"
+                    data-aos-delay="300"
+                    data-aos-easing="linear"
+                  >
+                    <div class="overlay overflow-hidden position-relative">
+                      <div
+                        class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                      >
+                        <div class="position-relative">
+                          <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                            Reproducir ahora
+                          </button>
+                          <span class="position-absolute bottom">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="106"
+                              height="28"
+                              viewBox="0 0 106 28"
+                              fill="none"
+                            >
+                              <path
+                                d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                                stroke="white"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <img
+                        class="w-100 cursor-pointer"
+                        src="./assets/Images/webp/roulette.webp"
+                        alt="roulette"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-4 col-sm-6 pt-4 pt-lg-0"
+                    data-aos="flip-left"
+                    data-aos-duration="800"
+                    data-aos-delay="300"
+                    data-aos-easing="linear"
+                  >
+                    <div class="overlay overflow-hidden position-relative">
+                      <div
+                        class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                      >
+                        <div class="position-relative">
+                          <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                            Reproducir ahora
+                          </button>
+                          <span class="position-absolute bottom">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="106"
+                              height="28"
+                              viewBox="0 0 106 28"
+                              fill="none"
+                            >
+                              <path
+                                d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                                stroke="white"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <img
+                        class="w-100 cursor-pointer"
+                        src="./assets/Images/webp/live-betting.webp"
+                        alt="live-betting.webp"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section_5 -->
+      <div class="mt_-1 position-relative" id="choose_us">
+        <div class="white_bg_img_2 bg_color_1 pt-10">
+          <div class="my_container">
+            <div
+              class="row flex-md-row flex-column-reverse align-items-center pb-sm-4 pt-md-3 pb-md-5 my-xl-5"
+            >
+              <div
+                class="col-md-6 position-relative z-2 pe-md-4 pt-5 pt-md-0"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <h1
+                  class="ff-Anton fs-48px line-height-120 fw-normal mb-0 text_black"
+                >
+                  Por qué elegirnos
+                </h1>
+                <p
+                  class="opacity-75 ff-Inter fw-medium line-height-160 mb-0 fs-16px py-2 mt-1 text_black"
+                >
+                  Con Exclusive Games tenés Exclusivos beneficios. Te
+                  reintegramos todo lo invertido en fichas en la moneda que
+                  elijas. En Exclusive Games siempre sumamos nuevos juegos.
+                  Juegos crash, los juegos interactivos que más pide la gente.
+                  Con Exclusive Games empezás a ganar ya! Creamos tu plataforma
+                  en solo 2 semanas.
+                </p>
+                <div class="position-relative pt-3">
+                  <button class="btn_2 ff-Inter fw-bold fs-16px">
+                    Aprende más
+                  </button>
+                  <span class="position-absolute bottom">
+                    <img
+                      src="./assets/Images/webp/gradient_border.webp"
+                      alt="gradient_border"
+                    />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-sm-10"
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <img
+                  class="w-100"
+                  src="./assets/Images/webp/casino_night_img.webp"
+                  alt="casino_night_img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section_6 -->
+      <div class="mt_-1 position-relative" id="offer">
+        <img
+          class="position-absolute ellipse_22 start-0"
+          src="./assets/Images/webp/Ellipse_22.webp"
+          alt="Ellipse_22"
+        />
+        <img
+          class="position-absolute ellipse_26 start-0"
+          src="./assets/Images/webp/Ellipse_26.webp"
+          alt="Ellipse_26"
+        />
+        <img
+          class="position-absolute ellipse_27"
+          src="./assets/Images/webp/Ellipse_27.webp"
+          alt="Ellipse_27"
+        />
+        <img
+          class="position-absolute end-0 top-0"
+          src="./assets/Images/webp/Ellipse_25.webp"
+          alt="Ellipse_25"
+        />
+        <div class="bg_color py-5">
+          <div class="my_container pt-xl-5">
+            <div class="row justify-content-center">
+              <div
+                class="col-lg-6 col-md-9 col-sm-10"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <img
+                  class="w-100 h-508px pe-md-2"
+                  src="./assets/Images/webp/Bar_777.webp"
+                  alt="Bar_777"
+                />
+              </div>
+              <div
+                class="col-lg-6 mt-5 mt-lg-0"
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <div class="d-flex justify-content-center text-center ps-2">
+                  <h1
+                    class="text-white mb-0 ff-Anton fs-48px line-height-120 fw-normal pb-5"
+                  >
+                    Más razones para elegirnos
+                  </h1>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-center justify-content-lg-start ps-2"
+                >
+                  <div class="choose_card">
+                    <div class="d-flex align-items-center gap-4">
+                      <img
+                        src="./assets/Images/webp/blub_img_2.webp"
+                        alt="blub_img_2"
+                      />
+                      <div class="d-flex flex-column ps-sm-3">
+                        <h1
+                          class="mb-0 text-white ff-Anton fs-32px line-height-120"
+                        >
+                          200
+                        </h1>
+                        <p
+                          class="mb-0 text-white ff-Inter fw-medium fs-16px line-height-160"
+                        >
+                          Páginas creadas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex align-items-center justify-content-center justify-content-lg-start ps-2"
+                >
+                  <div class="choose_card my-4">
+                    <div class="d-flex align-items-center gap-4">
+                      <img
+                        src="./assets/Images/webp/people_icon.webp"
+                        alt="people_icon"
+                      />
+                      <div class="d-flex flex-column ps-sm-3">
+                        <h1
+                          class="mb-0 text-white ff-Anton fs-32px line-height-120"
+                        >
+                          98%
+                        </h1>
+                        <p
+                          class="mb-0 text-white ff-Inter fw-medium fs-16px line-height-160"
+                        >
+                          Páginas creadas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex align-items-center justify-content-center justify-content-lg-start ps-2"
+                >
+                  <div class="choose_card">
+                    <div class="d-flex align-items-center gap-4">
+                      <img
+                        src="./assets/Images/webp/coin_ing.webp"
+                        alt="coin_ing"
+                      />
+                      <div class="d-flex flex-column ps-sm-3">
+                        <h1
+                          class="mb-0 text-white ff-Anton fs-32px line-height-120"
+                        >
+                          200
+                        </h1>
+                        <p
+                          class="mb-0 text-white ff-Inter fw-medium fs-16px line-height-160"
+                        >
+                          Divisas Disponibles
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-5 bg_color mt_-1">
+          <div class="my_container py-5">
+            <h1
+              class="text-white text-center ff-Anton fs-48px line-height-120 fw-normal pb-3 mb-0"
+            >
+              Nuestras ofertas
+            </h1>
+            <p
+              class="text-white fw-medium fs-16px line-height-160 text-center mb-0 pb-5"
+            >
+              Te ofrecemos las mejores experiencias de juegos para tus clientes.
+            </p>
+
+            <div
+              class="card_2 mt-3"
+              data-aos="flip-down"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              data-aos-easing="linear"
+            >
+              <div
+                class="row align-items-center justify-content-center pt-5 pb-4"
+              >
+                <div class="col-lg-6 position-relative col-md-10 col-sm-10">
+                  <img
+                    class="position-absolute spinner_gradient"
+                    src="./assets/Images/webp/Spinner_bg_gradient.webp"
+                    alt="Spinner_bg_gradient"
+                  />
+                  <img
+                    class="w-100 px-2 position-relative z-1"
+                    src="./assets/Images/webp/Spinner_img.webp"
+                    alt="Spinner_img"
+                  />
+                  <img
+                    class="w-100 mt-4"
+                    src="./assets/Images/webp/shadow.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="col-lg-6 pt-5 pt-lg-0 px-4">
+                  <div class="d-flex flex-column">
+                    <h1 class="ff-Anton text-white fs-32px mb-0">Silver</h1>
+                    <p
+                      class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text-white py-3 mb-0"
+                    >
+                      Diseño predeterminado, atractivo y fácil de navegar,
+                      tecnología HTLM5.
+                    </p>
+                    <p class="text-white ff-Anton fw-normal fs-48px py-3 mb-0">
+                      $5000
+                    </p>
+
+                    <div class="d-flex gap-2 pt-3">
+                      <img
+                        class="check_all"
+                        src="./assets/Images/webp/check-all.webp"
+                        alt="check-all.webp"
+                      />
+                      <p
+                        class="text-white mb-0 ff-Inter fw-medium opacity-75 line-height-160"
+                      >
+                        Disponibles Payku, Pix, Depósitos en Euros,
+                        Criptomonedas, Cargas manuales
+                      </p>
+                    </div>
+
+                    <div class="d-flex gap-2 pt-3">
+                      <img
+                        class="check_all"
+                        src="./assets/Images/webp/check-all.webp"
+                        alt="check-all.webp"
+                      />
+                      <p
+                        class="text-white mb-0 ff-Inter fw-medium opacity-75 line-height-160"
+                      >
+                        Control de RTP (controlás qué porcentaje pagar)
+                      </p>
+                    </div>
+
+                    <div class="d-flex gap-2 pt-3">
+                      <img
+                        class="check_all"
+                        src="./assets/Images/webp/check-all.webp"
+                        alt="check-all.webp"
+                      />
+                      <p
+                        class="text-white mb-0 ff-Inter fw-medium opacity-75 line-height-160"
+                      >
+                        Bonos Editables, Happy Hours, Jackpots, Códigos
+                        Promocionales Regalo
+                      </p>
+                    </div>
+
+                    <div class="d-flex gap-2 pt-3">
+                      <img
+                        class="check_all"
+                        src="./assets/Images/webp/check-all.webp"
+                        alt="check-all.webp"
+                      />
+                      <p
+                        class="text-white mb-0 ff-Inter fw-medium opacity-75 line-height-160"
+                      >
+                        Aplicación para Android y Windows de regalo.
+                      </p>
+                    </div>
+
+                    <div class="d-flex gap-2 pt-3">
+                      <img
+                        class="check_all"
+                        src="./assets/Images/webp/check-all.webp"
+                        alt="check-all.webp"
+                      />
+                      <p
+                        class="text-white mb-0 ff-Inter fw-medium opacity-75 line-height-160"
+                      >
+                        Tiempo de creación 2 a 3 semanas
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <div class="position-relative pt-3 mt-3">
+                        <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                          Comprar ahora
+                        </button>
+                        <span class="position-absolute bottom">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="106"
+                            height="28"
+                            viewBox="0 0 106 28"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pt-3"
+              data-aos="flip-down"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              data-aos-easing="linear"
+            >
+              <div class="card_2 my-5">
+                <div class="card_bg_img position-relative">
+                  <img
+                    class="position-absolute token"
+                    src="./assets/Images/webp/token_img.webp"
+                    alt="token_img"
+                  />
+                  <img
+                    class="position-absolute card_absloute"
+                    src="./assets/Images/webp/Card_1.webp"
+                    alt="Card_1"
+                  />
+                  <img
+                    class="position-absolute card_absloute_2"
+                    src="./assets/Images/webp/Card_2.webp"
+                    alt="Card_2"
+                  />
+                  <img
+                    class="position-absolute ludo_cube"
+                    src="./assets/Images/webp/ludo_cube.webp"
+                    alt="ludo_cube"
+                  />
+
+                  <div
+                    class="d-flex align-items-center justify-content-center py-5"
+                  >
+                    <div class="d-flex flex-column text-center gap-3">
+                      <h1
+                        class="mb-0 ff-Anton fs-32px line-height-120 text-white"
+                      >
+                        Luxury
+                      </h1>
+                      <p
+                        class="mb-0 text-white ff-Inter opacity-75 max-w-385px fs-16px fw-medium mx-auto line-height-160"
+                      >
+                        lleva tu experiencia de juego al siguiente nivel. Con
+                        todas las características de la versión Silver y la
+                        potencia adicional de la tecnología React .
+                      </p>
+                      <p
+                        class="ff-Anton fs-48px fw-normal line-height-120 text-white mt-3 mb-0"
+                      >
+                        $9000
+                      </p>
+
+                      <div class="d-flex justify-content-between gap-2">
+                        <img
+                          class="check_all"
+                          src="./assets/Images/webp/check-all.webp"
+                          alt="check-all"
+                        />
+                        <p
+                          class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 max-w-385px"
+                        >
+                          Disponibles Payku, Pix, Depósitos en Euros,
+                          Criptomonedas, Cargas manuales
+                        </p>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-2">
+                        <img
+                          class="check_all"
+                          src="./assets/Images/webp/check-all.webp"
+                          alt="check-all"
+                        />
+                        <p
+                          class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 max-w-385px"
+                        >
+                          Control de RTP (controlás qué porcentaje pagar)
+                        </p>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-2">
+                        <img
+                          class="check_all position-relative z-1"
+                          src="./assets/Images/webp/check-all.webp"
+                          alt="check-all"
+                        />
+                        <p
+                          class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 max-w-385px"
+                        >
+                          Bonos Editables, Happy Hours, Jackpots, Códigos
+                          Promocionales Regalo
+                        </p>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-2">
+                        <img
+                          class="check_all position-relative z-1"
+                          src="./assets/Images/webp/check-all.webp"
+                          alt="check-all"
+                        />
+                        <p
+                          class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 max-w-385px"
+                        >
+                          Aplicación para Android y Windows de regalo.
+                        </p>
+                      </div>
+
+                      <div class="d-flex justify-content-between gap-2">
+                        <img
+                          class="check_all position-relative z-1"
+                          src="./assets/Images/webp/check-all.webp"
+                          alt="check-all"
+                        />
+                        <p
+                          class="text-white mb-0 ff-Inter line-height-160 fw-medium opacity-75 max-w-385px pe-5"
+                        >
+                          Tiempo de creación 2 a 3 semanas
+                        </p>
+                      </div>
+
+                      <div
+                        class="d-flex align-items-center justify-content-center"
+                      >
+                        <div class="position-relative pt-2">
+                          <button class="btn_2 ff-Inter fw-bold fs-16px">
+                            Comprar ahora
+                          </button>
+                          <span class="position-absolute bottom">
+                            <img
+                              src="./assets/Images/webp/gradient_border.webp"
+                              alt="gradient_border"
+                            />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pt-3 position-relative z-1"
+              data-aos="flip-down"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              data-aos-easing="linear"
+            >
+              <div class="card_2 py-2">
+                <div
+                  class="row flex-column-reverse flex-md-row align-items-center p-5 my-4"
+                >
+                  <div class="col-md-5 mt-5 mt-md-0">
+                    <h1
+                      class="text-white ff-Anton fs-32px line-height-120 fw-normal fw-medium mb-0"
+                    >
+                      Platinum
+                    </h1>
+                    <p
+                      class="text-white ff-Inter fw-medium opacity-75 line-height-160 mb-0 py-3"
+                    >
+                      Diseño totalmente personalizado.Contáctanos para un
+                      presupuesto.
+                    </p>
+                    <h1
+                      class="text-white ff-Anton fw-normal line-height-120 mb-0 pt-3"
+                    >
+                      Consultar precio
+                    </h1>
+
+                    <div class="d-flex align-items-center gap-2 py-3">
+                      <img
+                        src="./assets/Images/webp/check-all.webp"
+                        alt="check-all"
+                      />
+                      <p
+                        class="text-white mb-0 ff-Inter fw-medium fs-16px opacity-75"
+                      >
+                        Personalizable
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <div class="position-relative pt-3 mt-3">
+                        <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                          Comprar ahora
+                        </button>
+                        <span class="position-absolute bottom">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="106"
+                            height="28"
+                            viewBox="0 0 106 28"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-7 position-relative">
+                    <img
+                      class="position-absolute all_rummy_gradient"
+                      src="./assets/Images/webp/Spinner_bg_gradient.webp"
+                      alt="Spinner_bg_gradient.webp"
+                    />
+                    <img
+                      class="w-100 position-relative z-1"
+                      src="./assets/Images/webp/all_fantsy_img.webp"
+                      alt="all_fantsy_img.webp"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg_color mt_-1">
+          <h1
+            class="text-white ff-Anton fw-normal fs-48px line-height-120 py-5 mb-0 text-center"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="300"
+            data-aos-easing="linear"
+          >
+            Ellos eligieron apostar con nosotros
+          </h1>
+
+          <div class="my_container">
+            <div class="row py-3">
+              <div
+                class="col-lg-4 col-sm-6 position-relative"
+                data-aos="flip-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <div class="overlay overflow-hidden position-relative">
+                  <div
+                    class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                  >
+                    <div class="position-relative">
+                      <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                        Rcasinovip
+                      </button>
+                      <span class="position-absolute bottom">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="106"
+                          height="28"
+                          viewBox="0 0 106 28"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <img
+                    class="w-100 cursor-pointer"
+                    src="./assets/Images/webp/Giros_Gratis.webp"
+                    alt="Giros_Gratis.webp"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-sm-6 pt-4 pt-sm-0"
+                data-aos="flip-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <div class="overlay overflow-hidden position-relative">
+                  <div
+                    class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                  >
+                    <div class="position-relative">
+                      <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                        Rcasinovip
+                      </button>
+                      <span class="position-absolute bottom">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="106"
+                          height="28"
+                          viewBox="0 0 106 28"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <img
+                    class="w-100 cursor-pointer"
+                    src="./assets/Images/webp/todos_ganan_img.webp"
+                    alt="todos_ganan_img.webp"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-sm-6 pt-4 pt-lg-0"
+                data-aos="flip-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <div class="overlay overflow-hidden position-relative">
+                  <div
+                    class="gradient_layer d-flex justify-content-center align-items-center position-absolute start-0 w-100 h-100"
+                  >
+                    <div class="position-relative">
+                      <button class="Acceso_btn ff-Inter fw-bold fs-16px">
+                        Rcasinovip
+                      </button>
+                      <span class="position-absolute bottom">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="106"
+                          height="28"
+                          viewBox="0 0 106 28"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 1C1 15.3594 12.6406 27 27 27H105"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <img
+                    class="w-100 cursor-pointer"
+                    src="./assets/Images/webp/Happy_hour_img.webp"
+                    alt="Happy_hour_img.webp"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              data-aos-easing="linear"
+            >
+              <p
+                class="mb-0 text-white max-w-880px text-center ff-Inter fw-semibold line-height-160 py-4 block"
+              >
+                Clientes satisfechos que confiaron en Exclusive Games y han
+                disfrutado de emocionantes experiencias de juego.
+                <span class="d-block block"
+                  >Ahora, la próxima apuesta está en tus manos.</span
+                >
+                <span class="block">Elige ganar. Elige exclusive game.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section_7 -->
+      <div class="mt_-1">
+        <div class="bg_color pt-5 position-relative">
+          <img
+            class="position-absolute ellipse_33 w-100"
+            src="./assets/Images/webp/Ellipse_33.webp"
+            alt="Ellipse_33.webp"
+          />
+          <div class="my_container pt-5">
+            <h1
+              class="ff-Anton fs-48px line-height-120 font-normal text-white py-4 mb-3 text-center"
+            >
+              Preguntas más frecuentes
+            </h1>
+            <div class="pt-3">
+              <div class="accordion max-w-970px mx-auto" id="accordionExample">
+                <div class="accordion-item overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button ff-Anton fs-20px line-height-120 mb-0 pb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      ¿Cuáles son las ventajas de elegir Juegos Exclusivos para
+                      mis plataformas de juegos?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body pt-0 mt_-1">
+                      <p
+                        class="max-w-880px ff-Inter fw-medium opacity-75 line-height-160 mb-0"
+                      >
+                        En Exclusive Games, ofrecemos experiencias únicas y
+                        personalizadas, respaldadas por más de 15 años de
+                        dedicación al desarrollo de multiplataformas para juegos
+                        de azar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item my_32px overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed ff-Anton fs-20px line-height-120 mb-0 pb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      ¿Cómo garantizan la seguridad de las operaciones en sus
+                      juegos?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body pt-0 mt_-1">
+                      <p
+                        class="max-w-880px ff-Inter fw-medium opacity-75 line-height-160"
+                      >
+                        En Exclusive Games, ofrecemos experiencias únicas y
+                        personalizadas, respaldadas por más de 15 años de
+                        dedicación al desarrollo de multiplataformas para juegos
+                        de azar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item my_32px overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed ff-Anton fs-20px line-height-120 mb-0 pb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      ¿Cuáles son las opciones de juego disponibles en las
+                      versiones Silver, Luxury y Platinum?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p
+                        class="max-w-880px ff-Inter fw-medium opacity-75 line-height-160"
+                      >
+                        En Exclusive Games, ofrecemos experiencias únicas y
+                        personalizadas, respaldadas por más de 15 años de
+                        dedicación al desarrollo de multiplataformas para juegos
+                        de azar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item my_32px overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed ff-Anton fs-20px line-height-120 mb-0 pb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsefour"
+                      aria-expanded="false"
+                      aria-controls="collapsefour"
+                    >
+                      ¿Cuánto tiempo lleva crear una plataforma con Juegos
+                      Exclusivos?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsefour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p
+                        class="max-w-880px ff-Inter fw-medium opacity-75 line-height-160"
+                      >
+                        En Exclusive Games, ofrecemos experiencias únicas y
+                        personalizadas, respaldadas por más de 15 años de
+                        dedicación al desarrollo de multiplataformas para juegos
+                        de azar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item my_32px overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed ff-Anton fs-20px line-height-120 mb-0 pb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsefive"
+                      aria-expanded="false"
+                      aria-controls="collapsefive"
+                    >
+                      ¿Qué métodos de pago aceptan?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsefive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p
+                        class="max-w-880px ff-Inter fw-medium opacity-75 line-height-160"
+                      >
+                        En Exclusive Games, ofrecemos experiencias únicas y
+                        personalizadas, respaldadas por más de 15 años de
+                        dedicación al desarrollo de multiplataformas para juegos
+                        de azar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mt-32 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed ff-Anton fs-20px line-height-120 mb-0 pb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsesix"
+                      aria-expanded="false"
+                      aria-controls="collapsesix"
+                    >
+                      ¿Puedo probar sus juegos antes de comprometerme?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsesix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p
+                        class="max-w-880px ff-Inter fw-medium opacity-75 line-height-160"
+                      >
+                        En Exclusive Games, ofrecemos experiencias únicas y
+                        personalizadas, respaldadas por más de 15 años de
+                        dedicación al desarrollo de multiplataformas para juegos
+                        de azar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="py_100px">
+              <div
+                class="launch_box py-5 my-lg-5 position-relative overflow-hidden"
+                data-aos="flip-down"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <img
+                  class="position-absolute start-0 top-0 w-710px w-100"
+                  src="./assets/Images/webp/launch_card_img_1.webp"
+                  alt="launch_card_img_1.webp"
+                />
+                <img
+                  class="position-absolute end-0 top-0 w-710px w-100"
+                  src="./assets/Images/webp/launch_card_img_2.webp"
+                  alt="launch_card_img_2.webp"
+                />
+                <div class="py_100px">
+                  <div
+                    class="d-flex align-items-center flex-column justify-content-center gap-4 position-relative z-1"
+                  >
+                    <p
+                      class="text-white ff-Anton fs-32px line-height-120 mb-0 px-3 text-center"
+                    >
+                      Lanza tu propia plataforma en sólo 2 semanas
+                    </p>
+
+                    <div class="position-relative mt-3">
+                      <button class="btn_2 ff-Inter fw-bold fs-16px">
+                        Leer más
+                      </button>
+                      <span class="position-absolute bottom">
+                        <img
+                          src="./assets/Images/webp/gradient_border.webp"
+                          alt="gradient_border"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="mt_-1">
+        <div class="bg-black position-relative">
+          <img
+            class="position-absolute footer-gradient-1"
+            src="./assets/Images/webp/radial_gradient.webp"
+            alt="radial_gradient"
+          />
+          <img
+            class="position-absolute footer-gradient-2"
+            src="./assets/Images/webp/radial_gradient.webp"
+            alt="radial_gradient"
+          />
+          <div class="py-5 position-relative">
+            <img
+              class="position-absolute bottom-0 w-100"
+              src="./assets/Images/webp/footer_line.webp"
+              alt="footer_line.webp"
+            />
+            <div class="my_container mt-3">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="d-flex flex-column gap-lg-3 gap-4 px-4 px-lg-0">
+                    <a href="#"
+                      ><img
+                        class="w-210px"
+                        src="./assets/Images/webp/Logo.webp"
+                        alt="Logo.webp"
+                    /></a>
+                    <p
+                      class="fw-medium line-height-160 opacity-75 fs-16px text-white"
+                    >
+                      En Exclusive Games somos un equipo apasionado de personas
+                      dedicadas al desarrollo de multiplataformas para juegos de
+                      azar
+                    </p>
+
+                    <span class="gap-3 d-flex align-items-center">
+                      <a href="https://www.instagram.com/"
+                        ><img
+                          class="scale"
+                          src="./assets/Images/webp/instagram.webp"
+                          alt="instagram.webp"
+                      /></a>
+                      <a href="https://www.facebook.com/"
+                        ><img
+                          class="scale"
+                          src="./assets/Images/webp/facebook.webp"
+                          alt="facebook.webp"
+                      /></a>
+                      <a href="https://in.linkedin.com/"
+                        ><img
+                          class="scale"
+                          src="./assets/Images/webp/linkedin.webp"
+                          alt="linkedin.webp"
+                      /></a>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-8 mt-2 ps-lg-3 mt-5 mt-lg-0">
+                  <div
+                    class="d-flex justify-content-lg-between justify-content-start flex-wrap flex-lg-nowrap gap-5 gap-lg-0"
+                  >
+                    <ul class="d-flex flex-column gap-3">
+                      <li
+                        class="ff-Inter text-white fs-16px fw-bold line-height-160"
+                      >
+                        Menú principal
+                      </li>
+                      <li class="pt-1">
+                        <a
+                          href="#"
+                          class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text_white"
+                          >Hogar</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text_white"
+                          >Misión</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text_white"
+                          >Tragamonedas</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text_white"
+                          >Por qué elegirnos</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text_white"
+                          >Ofertas</a
+                        >
+                      </li>
+                    </ul>
+
+                    <ul class="d-flex flex-column gap-3">
+                      <li
+                        class="ff-Inter text-white fs-16px fw-bold line-height-160"
+                      >
+                        Atención al cliente
+                      </li>
+                      <li class="pt-1">
+                        <a
+                          href="#"
+                          class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text_white"
+                          >¿Necesitas ayuda?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text_white"
+                          >política de privacidad</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text_white"
+                          >Términos de servicios</a
+                        >
+                      </li>
+                    </ul>
+
+                    <ul class="d-flex flex-column gap-3">
+                      <li
+                        class="ff-Inter text-white fs-16px fw-bold line-height-160"
+                      >
+                        Ponerse en contacto
+                      </li>
+                      <li class="pt-1 d-flex gap-2 flex-nowrap">
+                        <img src="./assets/Images/webp/email.webp" alt="" />
+                        <a
+                          href="#"
+                          class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text_white"
+                          >juegosexclusivos@gmail.com</a
+                        >
+                      </li>
+
+                      <li class="d-flex gap-2 flex-nowrap">
+                        <img src="./assets/Images/webp/phone.webp" alt="" />
+                        <a
+                          href="#"
+                          class="ff-Inter opacity-75 fw-medium fs-16px line-height-160 text_white"
+                          >(101)342-7873</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center text-center"
+          >
+            <p
+              class="text-white px-4 opacity-50 ff-Inter fw-medium mb-0 pt-3 pb-4"
+            >
+              © Juegos exclusivos - Todos los derechos reservados 2023
+            </p>
+          </div>
+        </div>
+      </footer>
+      <a id="button"></a>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/style.js"></script>
+  </body>
+</html>
