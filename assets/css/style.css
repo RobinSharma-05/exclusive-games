@@ -14,10 +14,6 @@
   padding-right: 12px;
 }
 
-.pt_5 {
-  padding-top: 70px;
-}
-
 /* preloader */
 #preloader_bg {
   min-height: 100vh;
@@ -59,13 +55,13 @@
 /* back to top */
 #button {
   background: linear-gradient(307deg, #51c8ef -13.72%, #7af57a 102.02%);
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   text-align: center;
   border-radius: 50%;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 10px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
@@ -73,10 +69,9 @@
 }
 
 #button::after {
-  content: "^";
+  content: "⇪";
   font-family: Montserrat;
-  font-size: 3em;
-  line-height: 65px;
+  font-size: 2.4rem;
   color: #fff;
 }
 
@@ -235,6 +230,7 @@
   max-width: 374px;
   width: 100%;
   padding: 24px 56px;
+  cursor: pointer;
 }
 
 .mt_-15px {
@@ -325,8 +321,8 @@
 }
 
 .py_100px {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .w-710px {
@@ -414,7 +410,7 @@
 .accordion-button {
   background-color: #00141b !important;
   color: white !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
 }
 
 .accordion-button::after {
@@ -668,8 +664,8 @@
   }
 
   .py_100px {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -742,8 +738,8 @@
   }
 
   .pt-10 {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .bg_color_1 {
